@@ -6,7 +6,18 @@
     "content_scripts": [
         {
             "matches": ["https://www.youtube.com/*"],
-            "js": ["./main.js"]
+            "js": ["jquery.min.js", "./main.js"],
+            "css": ["index.css"]
         }
-    ]
+    ],
+    "icons": {
+        "16": "focus.png",
+        "48": "focus.png",
+        "128": "focus.png"
+    },
+    "browser_action": {
+        "default_icon": "focus.png",
+        "default_popup": "popup.html",
+        "default_title": "A popup will appear here."
+    }
 }
