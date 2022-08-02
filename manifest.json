@@ -2,11 +2,11 @@
     "manifest_version": 2,
     "name": "Focus",
     "version": "1.0",
-    "description": "Block YouTube videos from displaying to increate productivity.",
+    "description": "Block YouTube videos from displaying to increase productivity.",
     "content_scripts": [
         {
-            "matches": ["https://www.youtube.com/*"],
             "js": ["jquery.min.js", "./main.js"],
+            "matches": ["https://www.youtube.com/*"],
             "css": ["index.css"]
         }
     ],
@@ -14,10 +14,5 @@
         "16": "focus.png",
         "48": "focus.png",
         "128": "focus.png"
-    },
-    "browser_action": {
-        "default_icon": "focus.png",
-        "default_popup": "popup.html",
-        "default_title": "A popup will appear here."
     }
 }
